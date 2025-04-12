@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson7-2</title>
+</head>
+<body>
+  <p>Cart Quantity</p>
+
+  <button onclick="
+  console.log(`cart quantity : ${cartQuantity}`)
+  ">show Quantity</button>
+
+  <button onclick="
+  updateQuantity(1);
+  ">Add to cart</button>
+
+  <button onclick="
+  updateQuantity(-1);
+  ">Remove from cart</button>
+ 
+  <button onclick="
+  updateQuantity(2);
+  ">+2</button>
+
+  <button onclick="
+  updateQuantity(3);
+  ">+3</button>
+
+  <button onclick="
+  updateQuantity(4);
+  ">+4</button>
+
+  <button onclick="
+  updateQuantity(5);
+  ">+5</button>
+
+  <button onclick="
+  cartQuantity = 0; 
+  console.log('cart reset') ;
+  console.log(`cart quantity : ${cartQuantity}`);
+  ">reset cart</button>
+
+  <button onclick="
+  updateQuantity(-2);
+  ">-2</button>
+
+  <button onclick="
+  updateQuantity(-3);
+  ">-3</button>
+
+  <script src="leeson7-2.js"></script>
+</body>
+</html>
